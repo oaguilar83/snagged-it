@@ -1,0 +1,17 @@
+.header {
+  background-color: #000000FF;
+  padding: 16px;
+}
+
+.title, .description {
+  color: #FFFFFFFF;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.description {
+  font-size: 32px;
+}
