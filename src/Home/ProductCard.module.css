@@ -6,13 +6,13 @@
   justify-content:space-between;
   align-items: center;
   flex-shrink: 0;
-  width: 250px;
-  height: 250px;
+  width: 268px;
+  height: 268px;
   border-radius: 8px;
 }
 
 .productTitle, .productPrice {
-  color: #FFFFFF  ;
+  color: #FFFFFFFF;
   text-align: center;
 }
 
