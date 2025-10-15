@@ -3,7 +3,7 @@ import Header from './Header/Header.jsx';
 import Home from './Home/Home.jsx'
 import styles from './App.module.css'
 
-function App() {
+export default function App() {
   return (
     <div className={styles.app}>
       <Header />
@@ -11,5 +11,3 @@ function App() {
     </div>
   );
 }
-
-export default App
