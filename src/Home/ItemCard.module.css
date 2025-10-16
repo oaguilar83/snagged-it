@@ -1,5 +1,5 @@
 .card {
-  background-color: #FFFFFF33;
+  background-color: #FFFFFF15;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -11,19 +11,19 @@
   border-radius: 8px;
 }
 
-.productTitleContainer {
+.itemTitleContainer {
   display: flex;
   align-items: center;
   height: 60px;
 }
 
-.productTitle, .productPrice {
+.itemTitle, .itemPrice {
   color: #FFFFFFFF;
   text-align: center;
 }
 
-.productTitle {
-  font-size: 24px;
+.itemTitle {
+  font-size: 22px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -32,6 +32,6 @@
   text-overflow: ellipsis;
 }
 
-.productPrice {
-  font-size: 20px;
+.itemPrice {
+  font-size: 18px;
 }

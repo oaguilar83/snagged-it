@@ -1,7 +1,7 @@
-import ProductList from "./ProductList.jsx";
+import ItemList from "./ItemList.jsx";
 import styles from './Home.module.css';
 
-const PRODUCTS = [
+const ITEMS = [
   {id: 1, title: "Brand New Red Washington Nationals New Era Hat", price: "$15", imagePath: "./test_images/washington_nationals_hat.jpg"},
   {id: 2, title: "Used Late 2008 Apple Macbook Pro", price: "$450", imagePath: "./test_images/apple_macbook_pro.jpg"},
   {id: 3, title: "Used Chicago Bulls Jersey", price: "$75", imagePath: "./test_images/chicago_bulls_jersey.jpg"},
@@ -11,7 +11,7 @@ const PRODUCTS = [
 export default function Home() {
   return (
     <div className={styles.home}>
-      <ProductList products={PRODUCTS} />
+      <ItemList items={ITEMS} />
     </div>
   );
 }
