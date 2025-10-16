@@ -1,6 +1,11 @@
 .header {
-  background-color: #000000FF;
-  padding: 16px;
+  background-color: #FFFFFF15;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .title, .description {
@@ -13,5 +18,5 @@
 }
 
 .description {
-  font-size: 32px;
+  font-size: 18px;
 }

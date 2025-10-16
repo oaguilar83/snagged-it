@@ -1,3 +1,12 @@
 .app {
+  display: flex;
+  flex-direction: column;
   min-width: 332px;
+}
+
+button {
+  background-color: #22E4ED;
+  color: #FFFFFFFF;
+  border: none;
+  border-radius: 8px;
 }
