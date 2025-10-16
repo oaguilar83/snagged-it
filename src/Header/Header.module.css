@@ -1,22 +1,16 @@
-.header {
+#header {
   background-color: #FFFFFF15;
-  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  padding: 0 16px
 }
 
-.title, .description {
-  color: #FFFFFFFF;
+.headerTitle, .headerSubText {
   text-align: center;
 }
 
-.title {
+.headerTitle {
   font-size: 48px;
-}
-
-.description {
-  font-size: 18px;
 }

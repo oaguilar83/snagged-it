@@ -1,9 +1,5 @@
-.buttonContainer {
-  padding: 16px 16px 0 0;
-    align-self: flex-end;
-}
-
-.createItemButton {
-  font-size: 18px;
-  padding: 8px 24px;
+#createItemButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px;
 }

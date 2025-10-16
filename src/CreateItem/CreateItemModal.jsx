@@ -1,16 +1,10 @@
-import CreateItemForm from './CreateItemForm';
-import styles from './CreateItemModal.module.css'
+import CreateItemForm from './CreateItemForm.jsx';
+import GenericModal from '../Modal/GenericModal.jsx'
 
-export default function CreateItemModal({ show, onClose }) {
-  if (!show) {
-    return null;
-  }
-
+export default function CreateItemModal({ showModal, onCloseModal }) {
   return (
-    <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.content} onClick={(e) => e.stopPropagation()}>
-        <CreateItemForm onCancel={onClose} />
-      </div>
-    </div>
-  )
+    <GenericModal showModal={showModal} onCloseModal={onCloseModal}>
+      <CreateItemForm onCancel={onCloseModal} />
+    </GenericModal>
+  );
 }

@@ -10,8 +10,8 @@ const ITEMS = [
 
 export default function Home() {
   return (
-    <div className={styles.home}>
+    <main id={styles.home}>
       <ItemList items={ITEMS} />
-    </div>
+    </main>
   );
 }

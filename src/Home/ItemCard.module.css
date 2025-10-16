@@ -1,4 +1,4 @@
-.card {
+.itemCard {
   background-color: #FFFFFF15;
   padding: 16px;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
   flex-shrink: 0;
   width: 268px;
-  height: 268px;
+  height: 250px;
   border-radius: 8px;
 }
 
@@ -18,12 +18,11 @@
 }
 
 .itemTitle, .itemPrice {
-  color: #FFFFFFFF;
   text-align: center;
 }
 
 .itemTitle {
-  font-size: 22px;
+  font-size: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;

@@ -7,16 +7,16 @@ import CreateItemButton from './CreateItem/CreateItemButton.jsx';
 import CreateItemModal from './CreateItem/CreateItemModal.jsx';
 
 export default function App() {
-  const [showModal, setShowModal] = useState(false);
+  const [showCreateItemModal, setShowCreateItemModal] = useState(false);
 
-  const handleOpenModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
+  const handleOpenCreateItemModal = () => setShowCreateItemModal(true);
+  const handleCloseCreateItemModal = () => setShowCreateItemModal(false);
 
   return (
-    <div className={styles.app}>
+    <div id={styles.app}>
       <Header />
-      <CreateItemButton onClick={handleOpenModal} />
-      <CreateItemModal show={showModal} onClose={handleCloseModal} />
+      <CreateItemButton onClick={handleOpenCreateItemModal} />
+      <CreateItemModal showModal={showCreateItemModal} onCloseModal={handleCloseCreateItemModal}/>
       <Home />
       <Footer />
     </div>

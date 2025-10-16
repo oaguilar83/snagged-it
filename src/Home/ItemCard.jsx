@@ -2,7 +2,7 @@ import styles from './ItemCard.module.css'
 
 export default function ItemCard({ item }) {
   return (
-    <div className={styles.card}>
+    <div className={styles.itemCard}>
       <div className={styles.itemTitleContainer}>
         <div className={styles.itemTitle}>{item.title}</div>
       </div>

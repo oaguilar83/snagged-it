@@ -2,8 +2,8 @@ import styles from './Footer.module.css'
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
-      <div>Snagged It!</div>
-    </div>
+    <footer id={styles.footer}>
+      <p>Snagged It!</p>
+    </footer>
   );
 }

@@ -2,9 +2,11 @@ import styles from './Header.module.css'
 
 export default function Header() {
   return (
-    <div className={styles.header}>
-      <div className={styles.title}>Snagged It!</div>
-      <div className={styles.description}>Welcome to the marketplace with the best deals!</div>
-    </div>
+    <header id={styles.header}>
+      <div className={styles.textContainer}>
+        <h1 className={styles.headerTitle}>Snagged It!</h1>
+        <h2 className={styles.headerSubText}>Welcome to the marketplace with the best deals!</h2>
+      </div>
+    </header>
   );
 }

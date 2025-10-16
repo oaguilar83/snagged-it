@@ -6,7 +6,7 @@ export default function ItemList({ items }) {
     <ItemCard item={item} key={item.id} />
   );
   return (
-    <div className={styles.itemList}>
+    <div id={styles.itemList}>
       {itemList}
     </div>
   );

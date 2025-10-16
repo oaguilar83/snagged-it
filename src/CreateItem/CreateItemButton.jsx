@@ -1,10 +1,10 @@
 import { useState } from "react";
 import styles from './CreateItemButton.module.css'
 
-export default function CreateButton({ onClick }) {
+export default function CreateItemButton({ onClick }) {
   return (
-    <div className={styles.buttonContainer}>
-      <button className={styles.createItemButton} onClick={onClick}>+ New Item</button>
+    <div id={styles.createItemButtonContainer}>
+      <button onClick={onClick}>+ New Item</button>
     </div>
   );
 }
