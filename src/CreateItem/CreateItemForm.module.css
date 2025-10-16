@@ -1,0 +1,35 @@
+.formContainer {
+  color: #FFFFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 300px;
+}
+
+.formHeader {
+  font-size: 32px;
+}
+
+.createItemForm {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.formButton {
+  font-size: 18px;
+  padding: 8px 16px;
+}
