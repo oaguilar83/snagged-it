@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Header from './Header/Header.jsx';
-import Home from './Home/Home.jsx'
-import Footer from './Footer/Footer.jsx'
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import styles from './App.module.css'
-import CreateItemButton from './CreateItem/CreateItemButton.jsx';
-import CreateItemModal from './CreateItem/CreateItemModal.jsx';
+import CreateItemButton from './components/CreateItem/CreateItemButton.jsx';
+import CreateItemModal from './components/CreateItem/CreateItemModal.jsx';
+import ItemList from './components/ItemList/ItemList.jsx';
 
 export default function App() {
   const [showCreateItemModal, setShowCreateItemModal] = useState(false);
@@ -16,8 +16,8 @@ export default function App() {
     <div id={styles.app}>
       <Header />
       <CreateItemButton onClick={handleOpenCreateItemModal} />
-      <CreateItemModal showModal={showCreateItemModal} onCloseModal={handleCloseCreateItemModal}/>
-      <Home />
+      <CreateItemModal showModal={showCreateItemModal} onCloseModal={handleCloseCreateItemModal} />
+      <ItemList />
       <Footer />
     </div>
   );

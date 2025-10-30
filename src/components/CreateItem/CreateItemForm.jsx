@@ -1,8 +1,10 @@
 import styles from './CreateItemForm.module.css'
 import { useState } from 'react'
-import { useMutation } from '@tanstack/react-query';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 export default function CreateItemForm({ onCancel }) {
+  const queryClient = useQueryClient();
+
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -33,7 +35,8 @@ export default function CreateItemForm({ onCancel }) {
 
   const mutation = useMutation( {
     mutationFn: submitForm,
-    onSucess: (data) => {
+    onSuccess: (data) => {
+      queryClient.invalidateQueries({ queryKey: ['items'] });
       console.log('Item created successfully:', data);
     },
     onError: (error) => {
